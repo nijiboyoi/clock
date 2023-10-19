@@ -17,7 +17,7 @@
             background-color: rgb(0, 255, 255); /* 時計の背景色 */
         }
 
-        .hour-hand, .minute-hand, .second-hand {
+        .second-hand,.hour-hand, .minute-hand {
             position: absolute;
             transform-origin: center bottom;
         }
@@ -44,7 +44,9 @@
             background-color: blue;
             top: 0px; /* 中心からの位置調整 */
             left: 100px;
+            z-index: 1; /* 分針を一番前に配置 */
         }
+        
 
     </style>
 </head>
@@ -73,4 +75,3 @@
     </script>
 </body>
 </html>
-
